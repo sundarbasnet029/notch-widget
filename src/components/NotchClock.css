@@ -1,0 +1,81 @@
+
+.notch-clock {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  background: #0b0b0b;
+  padding: 4px;
+ 
+  /* auto height so flip units are not clipped (was fixed 46px -> cut off 36px boxes) */
+  box-sizing: border-box;
+  position: relative;
+  border-radius: 0 0 20px 20px;
+  border-right: 1px solid #333;
+  border-bottom: 1px solid #333;
+  border-left: 1px solid #333;
+  background: #191919;
+  box-shadow: 0 2px 8px 1px rgba(0, 0, 0, 0.25);
+
+}
+
+.time-container{
+  display: flex;
+  gap: 4px;
+}
+
+
+
+
+
+
+.hr-container,
+.min-container 
+ {
+  display: flex;
+  justify-content: center;
+  background: #77C105;
+  border: 1px solid #87DB06;
+  color: #171717;
+  font-family: var(--font-decorative);
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 0.5px;
+  padding: 4px 12px;
+  border-radius: 8px;
+  width: 56px;
+  height: 32px;
+}
+.hr-container{
+  border-radius: 8px 8px 8px 16px;
+}
+.min-container{
+  border-radius: 8px 8px 16px 8px;
+}
+
+/* ---------- Date ---------- */
+.date-container {
+  display: flex;
+  align-items: baseline;
+  gap: 6px;
+  color: #e8e8e8;
+  width: 108px;
+  font-family: "Inter", system-ui, sans-serif;
+  white-space: nowrap;
+  line-height: 1;
+}
+
+.date-day {
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: -0.3px;
+  color: #ffffff;
+}
+
+.date-rest {
+  font-weight: 500;
+  font-size: 15px;
+  letter-spacing: -0.2px;
+  color: #8B8B8B;
+}
+
