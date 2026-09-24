@@ -2,7 +2,7 @@
 .notch-clock {
   display: inline-flex;
   align-items: center;
-  gap: 12px;
+  gap: 20px;
   background: #0b0b0b;
   padding: 4px;
  
@@ -10,9 +10,9 @@
   box-sizing: border-box;
   position: relative;
   border-radius: 0 0 20px 20px;
-  border-right: 1px solid #333;
-  border-bottom: 1px solid #333;
-  border-left: 1px solid #333;
+  border-right: 1px solid hsl(0, 0%, 30%);
+  border-bottom: 1px solid hsl(0, 0%, 30%);
+  border-left: 1px solid hsl(0, 0%, 30%);
   background: #191919;
   box-shadow: 0 2px 8px 1px rgba(0, 0, 0, 0.25);
 
