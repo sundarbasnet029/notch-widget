@@ -24,3 +24,6 @@ log = "0.4"
 tauri = { version = "2.11.6", features = [] }
 tauri-plugin-log = "2"
 tauri-plugin-autostart = "2.5.1"
+device_query = "4.0.1"
+windows = { version = "0.61.3", features = ["Win32_UI_WindowsAndMessaging"] }
+raw-window-handle = "0.6.2"
