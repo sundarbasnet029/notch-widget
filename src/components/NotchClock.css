@@ -5,8 +5,7 @@
   gap: 20px;
   background: #0b0b0b;
   padding: 4px;
- 
-  /* auto height so flip units are not clipped (was fixed 46px -> cut off 36px boxes) */
+  
   box-sizing: border-box;
   position: relative;
   border-radius: 0 0 16px 16px;
@@ -33,6 +32,10 @@
   padding: 4px 12px;
   border-radius: 10px;
   height: 32px;
+  min-width: 8.5ch;          /* locks width so layout never jumps */
+  text-align: center;
+  white-space: nowrap;
+  display: inline-block;
 }
 
 
