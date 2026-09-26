@@ -48,6 +48,7 @@ export default function NotchClock() {
   const hours12 = now.getHours() % 12 || 12;
   const hh = String(hours12).padStart(2, "0");
   const mm = String(now.getMinutes()).padStart(2, "0");
+  const ampm = now.getHours() >= 12 ? " PM" : " AM";  // ← AM/PM calculation
 
   const dayNum = now.getDate();
   const weekday = now.toLocaleDateString("en-US", {
@@ -63,16 +64,10 @@ export default function NotchClock() {
       className={`notch-clock ${visible ? "notch-visible" : "notch-hidden"}`}
       role="timer"
       aria-live="off"
-      aria-label={`${hh}:${mm} ${weekday}, ${month} ${dayNum}`}
+      aria-label={`${hh}:${mm} ${ampm} ${weekday}, ${month} ${dayNum}`}
     >
       <div className="time-container">
-        <div className="hr-container">
-          {hh}
-        </div>
-
-        <div className="min-container">
-          {mm}
-        </div>
+        {hh}:{mm}{ampm}
       </div>
 
       <div className="date-container">
